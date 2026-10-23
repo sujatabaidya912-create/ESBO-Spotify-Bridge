@@ -4,15 +4,16 @@
 
     <uses-feature
         android:name="android.hardware.usb.host"
-        android:required="true" />
+        android:required="false" />
 
     <application
         android:allowBackup="false"
         android:label="ESBO Spotify Bridge"
-        android:theme="@android:style/Theme.Material.Light.NoActionBar">
+        android:theme="@android:style/Theme.Material.Light.NoActionBar"
+        android:usesCleartextTraffic="false">
 
         <activity
-            android:name=".MainActivity"
+            android:name="com.esbo.spotifybridge.MainActivity"
             android:exported="true">
 
             <intent-filter>
@@ -23,7 +24,7 @@
         </activity>
 
         <service
-            android:name=".SpotifyNotificationService"
+            android:name="com.esbo.spotifybridge.SpotifyNotificationService"
             android:label="ESBO Spotify Bridge"
             android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"
             android:exported="true">
