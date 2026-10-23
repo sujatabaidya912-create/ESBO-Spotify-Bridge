@@ -9,8 +9,7 @@
     <application
         android:allowBackup="false"
         android:label="ESBO Spotify Bridge"
-        android:theme="@android:style/Theme.Material.Light.NoActionBar"
-        android:usesCleartextTraffic="false">
+        android:theme="@android:style/Theme.Material.Light.NoActionBar">
 
         <activity
             android:name="com.esbo.spotifybridge.MainActivity"
